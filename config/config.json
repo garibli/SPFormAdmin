@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "form-admin-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/formAdmin/FormAdminWebPart.js",
+          "manifest": "./src/webparts/formAdmin/FormAdminWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FormAdminWebPartStrings": "lib/webparts/formAdmin/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
